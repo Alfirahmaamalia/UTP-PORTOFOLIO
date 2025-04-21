@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Digital Journey</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .typing::after {
+      content: '|';
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <header class="bg-gray-900 py-6 px-8 flex justify-between items-center shadow-md z-20 relative">
+    <h1 class="text-4xl font-bold text-white">
+      <span class="text-cyan-400">Porto</span>folio
+    </h1>
+    <nav class="space-x-8 text-lg font-medium text-white">
+      <a href="index.html" class="hover:text-cyan-400">Home</a>
+      <a href="about.html" class="hover:text-cyan-400">About</a>
+      <a href="skills.html" class="hover:text-cyan-400">Skills</a>
+      <a href="projek.html" class="hover:text-cyan-400">Project</a>
+      <a href="contact.html" class="hover:text-cyan-400">Contact</a>
+      <a href="galeri.html" class="hover:text-cyan-400">Galeri</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center px-4 md:px-20 overflow-hidden">
+
+    <!-- Background Text -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center space-y-[-40px] select-none z-0 pointer-events-none">
+      <h1 class="text-[10rem] font-extrabold text-white opacity-10 tracking-wider">PHOTOGRAPHY</h1>
+      <h1 class="text-[10rem] font-extrabold text-white opacity-10 tracking-wider">PHOTOGRAPHY</h1>
+      <h1 class="text-[10rem] font-extrabold text-white opacity-10 tracking-wider">PHOTOGRAPHY</h1>
+    </div>
+
+    <!-- Foreground Content -->
+    <div class="flex flex-col-reverse md:flex-row items-center gap-12 w-full z-10">
+
+      <!-- Text -->
+      <div class="text-center md:text-left w-full md:w-1/2">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2">Hello, It's me</h2>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-2 text-white">Alfi Rahma Amalia</h1>
+        <p class="text-xl text-cyan-400 font-semibold mb-4">And I'm a Web Developer</p>
+        <p class="text-gray-300 mb-6">I'm a web designer with experience in creating beautiful, responsive websites using modern tools and techniques.</p>
+      </div>
+
+      <!-- Profile Picture -->
+      <div class="relative ml-10 md:ml-20">
+        <div class="rounded-full p-1 bg-gradient-to-tr from-cyan-500 to-cyan-500">
+          <img src="alfi.jpg" alt="Foto Profil" class="rounded-full w-96 h-96 object-cover border-4 border-black">
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Footer -->
+<footer class="bg-gray-900 py-4 text-center text-white">
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold mb-2">Connect with Me</h3>
+    <div class="flex justify-center gap-4">
+      <a href="https://www.instagram.com/challenge/action/AXFzNSZA5zn1v-5RHgQk4rMd4ex_gZWU57y4DRn6DEcMBISzg1qJ-mLBRb7uNigxp71DNqc/AfzYApP541DIIU4hB_4w2MMcmFTwV_qpsQ0RAWbePOp1tS6Hb69LGvHJw-9fBMhYHaCnDtax7uWwuw/ffc_Im5NboMHNVlSzWAbEemoFgclYI6yZzVwBnnhDDwKblbwHOtkptL0X28lB8QFuI1w/" class="w-9 h-9 flex items-center justify-center rounded-full border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition duration-300 text-base">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://api.whatsapp.com/send/?phone=622281291637&text&type=phone_number&app_absent=0" class="w-9 h-9 flex items-center justify-center rounded-full border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition duration-300 text-base">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/alfi-rahma-amalia-460576361/" class="w-9 h-9 flex items-center justify-center rounded-full border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition duration-300 text-base">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+  <p class="text-xs text-gray-400 mt-4">&copy; 2025 Alfi Rahma Amalia. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>

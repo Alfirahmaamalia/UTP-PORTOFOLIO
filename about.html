@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - My Digital Journey</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInLeft {
+      0% { opacity: 0; transform: translateX(-40px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes slideInRight {
+      0% { opacity: 0; transform: translateX(40px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .slide-in-left {
+      animation: slideInLeft 1s ease-out forwards;
+    }
+
+    .slide-in-right {
+      animation: slideInRight 1s ease-out forwards;
+    }
+
+    .zoom-img {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .zoom-img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-black text-white flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <header class="bg-gray-900 py-6 px-8 flex justify-between items-center shadow-md sticky top-0 z-50">
+    <h1 class="text-4xl font-bold text-white"><span class="text-cyan-400">Porto</span>folio</h1>
+    <nav class="space-x-8 text-lg font-medium text-white">
+      <a href="index.html" class="hover:text-cyan-400">Home</a>
+      <a href="about.html" class="hover:text-cyan-400">About</a>
+      <a href="skills.html" class="hover:text-cyan-400">Skills</a>
+      <a href="projek.html" class="hover:text-cyan-400">Project</a>
+      <a href="contact.html" class="hover:text-cyan-400">Contact</a>
+      <a href="galeri.html" class="hover:text-cyan-400">Galeri</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <!-- About + Edu/Org/Internship Section -->
+    <section class="px-7 md:px-20 pt-20 pb-16">
+      <div class="flex flex-col md:flex-row items-center gap-20 mb-16">
+        <!-- Text -->
+        <div class="md:w-1/2 fade-in-up">
+          <h2 class="text-5xl font-bold text-cyan-400 mb-7">About Me</h2>
+          <p class="text-gray-300 text-lg leading-relaxed">
+            Hello! I'm <span class="text-white font-semibold">Alfi Rahma Amalia</span>,<br>
+            I am a Computer Science student at the University of Lampung with a passion for Web Technology. Currently, I am diving deep into HTML, CSS, Tailwind, and JavaScript.<br><br>
+            I love creating modern and responsive websites, with a strong interest in UI/UX design and how to deliver beautiful digital experiences. This portfolio is a glimpse into my digital journey so far.
+          </p>
+        </div>
+
+        <!-- Photo -->
+        <div class="md:w-1/2 flex justify-center fade-in-up">
+          <img src="aku.png" alt="Foto Profil" class="w-[500px] h-[450px] md:w-[400px] md:h-[520px] object-cover rounded-[2rem] shadow-lg shadow-cyan-500/30 zoom-img" />
+        </div>
+      </div>
+
+      <!-- Education, Organization & Internship -->
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Education -->
+        <div class="slide-in-left bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-cyan-500/40 transition">
+          <h3 class="text-2xl font-semibold text-cyan-400 mb-4">🎓 Education</h3>
+          <ul class="list-disc pl-5 text-gray-300 space-y-2">
+            <li>Universitas Lampung - Ilmu Komputer (2023 - sekarang)</li>
+            <li>MAN 1 Lampung Tengah - IPA (2019 - 2022)</li>
+            <li>SMP Islam Terpadu (2016 - 2019)</li>
+          </ul>
+        </div>
+
+        <!-- Organization -->
+        <div class="slide-in-right bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-cyan-500/40 transition">
+          <h3 class="text-2xl font-semibold text-cyan-400 mb-4">👥 Organizational Experience</h3>
+          <ul class="list-disc pl-5 text-gray-300 space-y-2">
+            <li>HIMAKOM Universitas Lampung (2023 - sekarang)</li>
+            <li>Anggota Bidang Eksternal</li>
+            <li>Panitia berbagai acara: Bukber, Seminar, Workshop</li>
+          </ul>
+        </div>
+
+        <!-- Internship -->
+        <div class="slide-in-left bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-cyan-500/40 transition">
+          <h3 class="text-2xl font-semibold text-cyan-400 mb-4">💼 Internship Experience</h3>
+          <ul class="list-disc pl-5 text-gray-300 space-y-2">
+            <li>Magang di Dinas Kominfo Lampung (Jan 2025 - Mar 2025)</li>
+            <li>Membantu pembuatan dan pemeliharaan website instansi</li>
+            <li>Terlibat dalam tim desain UI/UX dan pengelolaan konten digital</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-4 text-center text-white">
+    <div class="mb-3">
+      <h3 class="text-base font-semibold mb-2">Connect with Me</h3>
+      <div class="flex justify-center gap-3">
+        <a href="https://www.instagram.com/challenge/action/AXFzNSZA5zn1v-5RHgQk4rMd4ex_gZWU57y4DRn6DEcMBISzg1qJ-mLBRb7uNigxp71DNqc/AfzYApP541DIIU4hB_4w2MMcmFTwV_qpsQ0RAWbePOp1tS6Hb69LGvHJw-9fBMhYHaCnDtax7uWwuw/ffc_Im5NboMHNVlSzWAbEemoFgclYI6yZzVwBnnhDDwKblbwHOtkptL0X28lB8QFuI1w/" class="w-8 h-8 flex items-center justify-center rounded-full border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition duration-300 text-sm">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=622281291637&text&type=phone_number&app_absent=0" class="w-8 h-8 flex items-center justify-center rounded-full border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition duration-300 text-sm">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/alfi-rahma-amalia-460576361/" class="w-8 h-8 flex items-center justify-center rounded-full border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition duration-300 text-sm">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">&copy; 2025 Alfi Rahma Amalia. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
